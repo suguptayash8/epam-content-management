@@ -17,7 +17,7 @@ public class SenetenceAnalyzer {
 
     @RequestMapping(value = "/generate/sentence/{word}", method = RequestMethod.GET)
     public ResponseEntity<Object> createUser(@PathVariable String word){
-        return  new ResponseEntity<>(word, HttpStatus.CONFLICT);
+        return  new ResponseEntity<>(word, HttpStatus.OK);
     }
 
 }
